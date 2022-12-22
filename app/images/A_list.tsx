@@ -1,4 +1,4 @@
-import styles from '../styles/A_list.module.css'
+import styles from './A_list.module.css'
 import Article from './Article'
 // import mysql from 'mysql2'
 // import { GetStaticProps,NextPage } from 'next'
@@ -19,6 +19,7 @@ type A_listProps = {
 function A_list({articles}:A_listProps){
     let list = []
     // for(let i of props){
+    console.log(articles);
     for(let i of articles){
         list.push(<Article {...i} />)
     }
